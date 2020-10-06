@@ -8,7 +8,7 @@
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
     # set to where you have your react app
-    origins 'localhost:3000'
+    origins 'localhost:3000', 'https://ed-box-client-push.herokuapp.com'
 
     resource '*',
       headers: :any,
